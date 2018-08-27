@@ -1,5 +1,5 @@
 {
-  "name": "inquirer-autocompleteprompt",
+  "name": "@pn9873/inquirer-autocompleteprompt",
   "description": "Autocomplete prompt for inquirer",
   "version": "1.0.1",
   "files": [
