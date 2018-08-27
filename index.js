@@ -5,8 +5,7 @@
  */
 
 var ansiEscapes = require('ansi-escapes');
-var chalk = require('chalk');
-var figures = require('figures');
+var chalk = require('chalk'); 
 var Base = require('inquirer/lib/prompts/base');
 var Choices = require('inquirer/lib/objects/choices');
 var observe = require('inquirer/lib/utils/events');
@@ -254,7 +253,7 @@ function listRender(choices, pointer /*: string */) /*: string */ {
     }
 
     var isSelected = i - separatorOffset === pointer;
-    var line = (isSelected ? figures.pointer + ' ' : '  ') + choice.name;
+    var line = (isSelected ? '\u23f5 ' : '  ') + choice.name;
 
     if (isSelected) {
       line = chalk.cyan(line);

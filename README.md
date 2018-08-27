@@ -1,17 +1,12 @@
-# inquirer-autocomplete-prompt
-
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/mokkabonna/inquirer-autocomplete-prompt.svg)](https://greenkeeper.io/)
+# inquirer-autocomplete-prompt 
 
 Autocomplete prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
 
-[![build status](https://secure.travis-ci.org/mokkabonna/inquirer-autocomplete-prompt.svg)](http://travis-ci.org/mokkabonna/inquirer-autocomplete-prompt)
-[![dependency status](https://david-dm.org/mokkabonna/inquirer-autocomplete-prompt.svg)](https://david-dm.org/mokkabonna/inquirer-autocomplete-prompt)
-
+ 
 ## Installation
 
 ```
-npm install --save inquirer-autocomplete-prompt
+npm install --save inquirer-autocompleteprompt
 ```
 
 ## Usage
@@ -52,6 +47,7 @@ See [inquirer](https://github.com/SBoudrias/Inquirer.js) readme for meaning of a
 inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'));
 inquirer.prompt([{
   type: 'autocomplete',
+  prefix:'$',
   name: 'from',
   message: 'Select a state to travel from',
   source: function(answersSoFar, input) {
@@ -61,14 +57,15 @@ inquirer.prompt([{
   //etc
 });
 ```
-
-See also [example.js](https://github.com/mokkabonna/inquirer-autocomplete-prompt/blob/master/example.js) for a working example.
+ 
 
 I recommend using this package with [fuzzy](https://www.npmjs.com/package/fuzzy) if you want fuzzy search. Again, see the example for a demonstration of this.
 
-![Autocomplete prompt](./inquirer.gif)
+## Changes to Original
+Inquerer version issue due to which the prefix was not passed on.
+Prompt select icon changed to unicode.
 
-## Credits
+## Thanks
 [Martin Hansen](https://github.com/mokkabonna/)
 
 ## License

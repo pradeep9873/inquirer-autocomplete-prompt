@@ -19,15 +19,11 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "license": "ISC", 
+  "license": "ISC",
   "dependencies": {
     "ansi-escapes": "^3.0.0",
     "inquirer": "^3.2.2",
     "chalk": "^2.0.0",
-    "figures": "^2.0.0",
     "run-async": "^2.3.0"
-  },
-  "peerDependencies": {
-    "inquirer": "^5.0.0 || ^6.0.0"
-  } 
+  }
 }
